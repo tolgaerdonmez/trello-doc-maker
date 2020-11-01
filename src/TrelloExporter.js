@@ -20,7 +20,10 @@ export class TrelloExporter {
   };
 
   exportLists = () => {
-    const lists = this.trelloBoard.lists.map((list) => this.#exportList(list));
+    const lists = this.trelloBoard.lists.map((list) => ({
+      name: list.name,
+      cards: this.#exportList(list),
+    }));
     return lists;
   };
 }
