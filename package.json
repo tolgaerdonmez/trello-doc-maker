@@ -4,7 +4,13 @@
 	"main": "src/index.js",
 	"dependencies": {
 		"@babel/polyfill": "^7.10.1",
-		"nodemon": "^2.0.4"
+		"dotenv": "^8.2.0",
+		"nodemon": "^2.0.4",
+		"puppeteer": "^5.4.1",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-markdown": "^5.0.2",
+		"styled-components": "^5.2.1"
 	},
 	"scripts": {
 		"start": "babel-node .",
@@ -16,6 +22,8 @@
 		"@babel/node": "^7.10.1",
 		"@babel/plugin-proposal-class-properties": "^7.12.1",
 		"@babel/plugin-transform-async-to-generator": "^7.10.1",
-		"@babel/preset-env": "^7.10.2"
+		"@babel/preset-env": "^7.10.2",
+		"@babel/preset-react": "^7.12.1",
+		"babel-plugin-styled-components": "^1.11.1"
 	}
 }
